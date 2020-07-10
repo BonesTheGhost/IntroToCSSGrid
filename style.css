@@ -1,0 +1,83 @@
+* {
+  margin: 2px;
+  padding: 5px;
+}
+
+#reference{
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+p{
+  margin: 2px;
+  padding: 5px;
+}
+
+a{
+  background-color: #062d61;
+  color: #0e71ce;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 20px 15px 20px;
+}
+
+a:hover{
+  background-color: #1e5daf;
+  color: #0b1620;
+  text-decoration: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 3px #a2abff;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr 1.5fr 3fr 1fr;
+  grid-gap: 2px;
+  grid-template-areas: 
+  "title title"
+  "header header"
+  "sidebar content"
+  "footer footer";
+}
+
+.title{
+  grid-area: title;
+  background-color: #1877f2;
+}
+
+.header{
+  grid-area: header;
+  background-color: #34a853;
+}
+
+.sidebar{
+  grid-area: sidebar;
+  text-align: center;
+  padding: auto;
+  background-color: #c32aa3;
+}
+
+.content{
+  grid-area: content;
+  background-color: #f0f0ff;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: #ff0000;
+}
+
+/*
+.grid div:nth-child(even){
+  background-color: red;
+}
+
+.grid div:nth-child(odd){
+  background-color: blue;
+}
+*/
